@@ -3,12 +3,14 @@
 
 Herein you should find your notebook for doing the lab, and all the files that you will need to calculate the transition states
 
+Also make sure you install openmm and parmed!
+
 You will need to create folders for each molecule 1 through 5.
 In each you will need to add the appropriate files:
 
 1) some initial_geometry
-2) parameter file
-3) inpcrd file
+2) parameter file motor.prmtop
+3) inpcrd file motor.inpcrd
 4) simulation.txt file for pyGSM
 5) run.sh
 

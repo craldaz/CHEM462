@@ -1,0 +1,5 @@
+use_crystal      False
+use_pme          False
+cutoff           1.0
+prmtopfile           motor.prmtop
+inpcrdfile           motor.inpcrd

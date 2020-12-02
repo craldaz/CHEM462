@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lab</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="lab-manual-for-transition-states-and-molecular-motors-internal-coordinates-and-molecular-mechanics">Lab Manual for Transition States and Molecular Motors: Internal Coordinates and Molecular Mechanics</h1>
+<h2 id="lab-setup">Lab Setup</h2>
+<p>We will need to use Anaconda, which is a python (and more) package manager in order to run all the programs today. We will also need to download programs from Github, a distributed version control repository. Finally, we will need a way to visualize our results. Somehow the class of 2019 was able to override the Universities Computers to install all the below programs while in Powershell (a rudimentary programming environment), so I have faith in you all today.</p>
+<p>We will need to navigate around the “directories” in the terminal here is a small cheat sheet:</p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ls</td>
+<td>list content of the current directory</td>
+</tr>
+<tr>
+<td>cd arg</td>
+<td>change to argument directory (if no argument is given change directory to home)</td>
+</tr>
+<tr>
+<td>cd …</td>
+<td>backup one level from current directory</td>
+</tr>
+<tr>
+<td>cp  arg1 arg2</td>
+<td>copy</td>
+</tr>
+<tr>
+<td>tail –f arg</td>
+<td>lists file output as it runs</td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>make directory</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>print current working directory</td>
+</tr>
+<tr>
+<td>vi</td>
+<td>opens vim</td>
+</tr>
+<tr>
+<td>rm</td>
+<td>remove file (use -r to remove folder)</td>
+</tr>
+</tbody>
+</table><ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Install Anaconda Navigator <a href="https://docs.anaconda.com/anaconda/install/mac-os/">MacOS</a> or <a href="https://docs.anaconda.com/anaconda/install/windows/">Windows</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">  Download GSM from <a href="https://github.com/ZimmermanGroup/pyGSM">github</a> using git, on MacOS this can be done using <code>git clone https://github.com/ZimmermanGroup/pyGSM.git</code>, on Windows this is probably most easily done by downloading and unzipping file the Zip file.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Open Anaconda Navigator, and press the cube in the left upper corner that says Environments. Make a new environment for today.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Press Install Jupyter Lab, and then launch</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> On the landing page start a “Terminal” launcher</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Navigate to the folder where you installed pyGSM</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Install pyGSM <code>python setup.py install</code></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Verify pyGSM installed correctly by typing <code>gsm -h</code> if it gives an error it was not successful. Windows users may need to use a different version of numpy: <code>pip install numpy=1.19.3</code></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Install additional packages and functionality to visualize molecules
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> <code>pip install py3dmol</code></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> <code>conda istall nodejs</code></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> <code>jupyter nbextension enable --py --sys-prefix widgetsnbextension</code></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> <code>conda install -c conda-forge ipywidgets=7.2.1</code></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Download CHEM462 lab materials from <a href="https://github.com/craldaz/CHEM462">github</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Examine and Rename <code>YourName_Notebook.ipynb</code> to your name, this is where you will complete your lab/</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">  Examine the READMEs</li>
+</ul>
+<p><mark>You are now ready to start the lab</mark></p>
+<h2 id="run-the-calculations">Run The Calculations</h2>
+<p>Run transition state optimization for each structure 1 through 5</p>
+<p>Using the Terminal Launcher change directory to the molecule you want to run. Make sure the proper files are in place, and then execute the GSM command as demonstrated in <code>run.sh</code></p>
+<p>Monitor the jobs while they run by visualizing the <code>scratch/growth_iters_*</code> and <code>scratch/opt_iters_*</code>files and by also looking at the log file.</p>
+<p>Plot the energy of the reaction path using matplotlib, the energies are printed in the scratch/opt_iters_* files and can be retrieved using the functions provided.</p>
+<p>Repeat the process until they are completed.</p>
+<h2 id="analysis">Analysis</h2>
+<p>Calculate <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>G</mi></mrow><annotation encoding="application/x-tex">\Delta G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord">Δ</span><span class="mord mathdefault">G</span></span></span></span></span>, <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>E</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">E_a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span style="margin-right: 0.05764em;" class="mord mathdefault">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.151392em;"><span class="" style="top: -2.55em; margin-left: -0.05764em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span> and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>t</mi><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msub></mrow><annotation encoding="application/x-tex">t_{1/2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.97028em; vertical-align: -0.3552em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3448em;"><span class="" style="top: -2.5198em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">/</span><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.3552em;"><span class=""></span></span></span></span></span></span></span></span></span></span></p>
+<p><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi><mo>=</mo><mfrac><mrow><msub><mi>k</mi><mi>b</mi></msub><mo>∗</mo><mi>T</mi></mrow><mi>h</mi></mfrac><mi>e</mi><mi>x</mi><mi>p</mi><mo stretchy="false">(</mo><mo>−</mo><mfrac><msub><mi>E</mi><mi>a</mi></msub><mrow><mi>R</mi><mi>T</mi></mrow></mfrac><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">k = \frac{k_b*T}{h}exp(-\frac{E_a}{RT})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.69444em; vertical-align: 0em;"></span><span style="margin-right: 0.03148em;" class="mord mathdefault">k</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 1.24697em; vertical-align: -0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.901968em;"><span class="" style="top: -2.655em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">h</span></span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.41586em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span style="margin-right: 0.03148em;" class="mord mathdefault mtight">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3448em;"><span class="" style="top: -2.34877em; margin-left: -0.03148em; margin-right: 0.0714286em;"><span class="pstrut" style="height: 2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.151229em;"><span class=""></span></span></span></span></span></span><span class="mbin mtight">∗</span><span style="margin-right: 0.13889em;" class="mord mathdefault mtight">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.345em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathdefault">e</span><span class="mord mathdefault">x</span><span class="mord mathdefault">p</span><span class="mopen">(</span><span class="mord">−</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.888431em;"><span class="" style="top: -2.655em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span style="margin-right: 0.00773em;" class="mord mathdefault mtight">R</span><span style="margin-right: 0.13889em;" class="mord mathdefault mtight">T</span></span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.4101em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span style="margin-right: 0.05764em;" class="mord mathdefault mtight">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.164543em;"><span class="" style="top: -2.357em; margin-left: -0.05764em; margin-right: 0.0714286em;"><span class="pstrut" style="height: 2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.143em;"><span class=""></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.345em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">)</span></span></span></span></span>; $t_{1/2} = <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mrow><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mi>k</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{ln(2)}{k}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.355em; vertical-align: -0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.01em;"><span class="" style="top: -2.655em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span style="margin-right: 0.03148em;" class="mord mathdefault mtight">k</span></span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.485em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span style="margin-right: 0.01968em;" class="mord mathdefault mtight">l</span><span class="mord mathdefault mtight">n</span><span class="mopen mtight">(</span><span class="mord mtight">2</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.345em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+
+<table>
+<thead>
+<tr>
+<th>Constants</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>k</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">k_b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.84444em; vertical-align: -0.15em;"></span><span class="mord"><span style="margin-right: 0.03148em;" class="mord mathdefault">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.336108em;"><span class="" style="top: -2.55em; margin-left: -0.03148em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span></td>
+<td>1.38 x10^-23 J/s</td>
+</tr>
+<tr>
+<td><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.69444em; vertical-align: 0em;"></span><span class="mord mathdefault">h</span></span></span></span></span></td>
+<td>6.626x10^-45 J*K</td>
+</tr>
+<tr>
+<td>R</td>
+<td>1.98*10^-3 kcal mol<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">^{-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.814108em; vertical-align: 0em;"></span><span class="mord"><span class=""></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span></span> K<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">^{-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.814108em; vertical-align: 0em;"></span><span class="mord"><span class=""></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+</tr>
+</tbody>
+</table><ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Compare  <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>G</mi></mrow><annotation encoding="application/x-tex">\Delta G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord">Δ</span><span class="mord mathdefault">G</span></span></span></span></span>,  <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>E</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">E_a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span style="margin-right: 0.05764em;" class="mord mathdefault">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.151392em;"><span class="" style="top: -2.55em; margin-left: -0.05764em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span> and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>t</mi><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msub></mrow><annotation encoding="application/x-tex">t_{1/2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.97028em; vertical-align: -0.3552em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3448em;"><span class="" style="top: -2.5198em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">/</span><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.3552em;"><span class=""></span></span></span></span></span></span></span></span></span></span>  to the literature<br>
+values and your own expectation. <mark>Which is the fastest motor?</mark></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Using the values of the internal coordinates (hint: GSM produces a file called IC_DATA which shows the changes in internal coordinates or by getting values for select internal coordinates) Reproduce the energies with the MM parameters and these values. You will need to use the parameters in the prmtop parameterfile.</p>
+</li>
+</ul>
+</div>
+</body>
+
+</html>
