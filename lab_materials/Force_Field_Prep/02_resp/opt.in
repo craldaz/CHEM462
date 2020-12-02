@@ -1,0 +1,41 @@
+method               hf
+basis                6-31g*
+coordinates          capped.pdb
+charge               0
+threall              1e-14
+convthre             1e-6
+precision            double
+run                  minimize
+min_coordinates      cartesian
+
+$constraints
+atom 1
+atom 2
+atom 3
+atom 4
+atom 5
+atom 6
+atom 7
+atom 8
+atom 9
+atom 14
+atom 15
+atom 16
+atom 17
+atom 22
+atom 23
+atom 24
+atom 25
+atom 26
+atom 29
+atom 30
+atom 31
+atom 32
+atom 35
+atom 36
+atom 37
+atom 38
+atom 44
+atom 45
+atom 49
+$end

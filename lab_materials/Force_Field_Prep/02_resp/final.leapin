@@ -1,0 +1,7 @@
+source leaprc.ff14SB
+source leaprc.gaff
+loadamberparams final.frcmod
+LIG=loadmol2 final.mol2
+check LIG
+saveoff LIG final.lib
+quit

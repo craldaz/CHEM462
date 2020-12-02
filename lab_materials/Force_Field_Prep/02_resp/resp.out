@@ -1,0 +1,280 @@
+Startfile from command line: resp.in
+
+
+       ***********************************************************
+       *                    TeraChem v1.9-2019.11-dev            *
+       *                 Hg Version: 10ac720d392a                *
+       *                   Development Version                   *
+       *                Compiled without textures                *
+       *           Chemistry at the Speed of Graphics!           *
+       ***********************************************************
+       * This program may only be used in connection with        *
+       * a valid license from PetaChem, LLC. Use of this program *
+       * or results thereof indicates acceptance of all terms    *
+       * and conditions stated in the license and that a valid   *
+       * license agreement between the user and PetaChem, LLC    *
+       * exists. PetaChem, LLC does not warrant the correctness  *
+       * of results or their suitability for any purpose.        *
+       * Please email bugs, suggestions, and comments to         *
+       *                  help@petachem.com                      *
+       *                                                         *
+       ***********************************************************
+
+
+       ***********************************************************
+       *  Compiled by jenkins      Wed Nov 13 02:53:23 PST 2019  *
+       *  Supported architectures: sm_30 sm_35 sm_52 sm_61 sm_70 *
+       *  Cuda compilation tools, release 9.0, V9.0.176          *
+       ***********************************************************
+
+
+ Job started   Mon Dec  9 13:18:10 2019
+ On fire-10-03 (available memory: 30527 MB)
+
+######################################### RUNTIME INFO ##########################################
+terachem resp.in 
+
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  418.39  Sat Feb  9 19:19:37 CST 2019
+GCC version:  gcc version 4.8.5 20150623 (Red Hat 4.8.5-28) (GCC) 
+
+	linux-vdso.so.1 =>  (0x00007ffd29f5b000)
+	libcurl.so.4 => /usr/lib64/libcurl.so.4 (0x00007f1d418a6000)
+	libdftbplus.so => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libdftbplus.so (0x00007f1d41386000)
+	libfsockets.so => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libfsockets.so (0x00007f1d41182000)
+	libxmlf90.so => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libxmlf90.so (0x00007f1d40f5d000)
+	libOpenMM.so => /global/software/OpenMM/7.1-intel-2016.0.109/lib/libOpenMM.so (0x00007f1d4099b000)
+	libprotobuf.so.12 => /global/software/protobuf/3.2.0-intel-2016.0.109/lib/libprotobuf.so.12 (0x00007f1d40431000)
+	libgpubox.so.1 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libgpubox.so.1 (0x00007f1d4021f000)
+	libtensorbox.so.1 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libtensorbox.so.1 (0x00007f1d40011000)
+	libmoleculebox.so.1 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libmoleculebox.so.1 (0x00007f1d3fe01000)
+	libintbox.so.1 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libintbox.so.1 (0x00007f1d1b82a000)
+	libthcbox.so.1 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libthcbox.so.1 (0x00007f1d19b76000)
+	libgridbox.so.1 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libgridbox.so.1 (0x00007f1d19617000)
+	libdftbox.so.1 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libdftbox.so.1 (0x00007f1d1932b000)
+	libcibox.so.1 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libcibox.so.1 (0x00007f1d18c5b000)
+	libccbox.so.1 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libccbox.so.1 (0x00007f1d1893e000)
+	libsandboxbox.so.1 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libsandboxbox.so.1 (0x00007f1d1873b000)
+	libsqmbox.so.1 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libsqmbox.so.1 (0x00007f1d18158000)
+	libcuda.so.1 => /usr/lib64/libcuda.so.1 (0x00007f1d17002000)
+	libcudart.so.9.0 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libcudart.so.9.0 (0x00007f1d16d95000)
+	libcublas.so.9.0 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libcublas.so.9.0 (0x00007f1d1395f000)
+	libcufft.so.9.0 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libcufft.so.9.0 (0x00007f1d0b8be000)
+	libcusparse.so.9.0 => /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1/lib/libcusparse.so.9.0 (0x00007f1d08158000)
+	libcrypto.so.10 => /usr/lib64/libcrypto.so.10 (0x00007f1d07cf7000)
+	libssl.so.10 => /usr/lib64/libssl.so.10 (0x00007f1d07a85000)
+	libm.so.6 => /usr/lib64/libm.so.6 (0x00007f1d07783000)
+	libcilkrts.so.5 => /global/software/ifort/2016.0.109/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64/libcilkrts.so.5 (0x00007f1d07542000)
+	libstdc++.so.6 => /usr/lib64/libstdc++.so.6 (0x00007f1d0723b000)
+	libgcc_s.so.1 => /usr/lib64/libgcc_s.so.1 (0x00007f1d07025000)
+	libpthread.so.0 => /usr/lib64/libpthread.so.0 (0x00007f1d06e09000)
+	libc.so.6 => /usr/lib64/libc.so.6 (0x00007f1d06a3c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f1d41b0f000)
+	libdl.so.2 => /usr/lib64/libdl.so.2 (0x00007f1d06838000)
+	libidn.so.11 => /usr/lib64/libidn.so.11 (0x00007f1d06605000)
+	libssh2.so.1 => /usr/lib64/libssh2.so.1 (0x00007f1d063db000)
+	libssl3.so => /usr/lib64/libssl3.so (0x00007f1d06189000)
+	libsmime3.so => /usr/lib64/libsmime3.so (0x00007f1d05f62000)
+	libnss3.so => /usr/lib64/libnss3.so (0x00007f1d05c35000)
+	libnssutil3.so => /usr/lib64/libnssutil3.so (0x00007f1d05a06000)
+	libplds4.so => /usr/lib64/libplds4.so (0x00007f1d05802000)
+	libplc4.so => /usr/lib64/libplc4.so (0x00007f1d055fd000)
+	libnspr4.so => /usr/lib64/libnspr4.so (0x00007f1d053bf000)
+	libgssapi_krb5.so.2 => /usr/lib64/libgssapi_krb5.so.2 (0x00007f1d05172000)
+	libkrb5.so.3 => /usr/lib64/libkrb5.so.3 (0x00007f1d04e8a000)
+	libk5crypto.so.3 => /usr/lib64/libk5crypto.so.3 (0x00007f1d04c57000)
+	libcom_err.so.2 => /usr/lib64/libcom_err.so.2 (0x00007f1d04a53000)
+	liblber-2.4.so.2 => /usr/lib64/liblber-2.4.so.2 (0x00007f1d04844000)
+	libldap-2.4.so.2 => /usr/lib64/libldap-2.4.so.2 (0x00007f1d045ef000)
+	libz.so.1 => /usr/lib64/libz.so.1 (0x00007f1d043d9000)
+	libifport.so.5 => /global/software/ifort/2016.0.109/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64/libifport.so.5 (0x00007f1d041aa000)
+	libifcoremt.so.5 => /global/software/ifort/2016.0.109/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64/libifcoremt.so.5 (0x00007f1d03e18000)
+	libimf.so => /global/software/imkl/11.3.0.109-iimpi-2016.0.109/lib/intel64/libimf.so (0x00007f1d03920000)
+	libsvml.so => /global/software/imkl/11.3.0.109-iimpi-2016.0.109/lib/intel64/libsvml.so (0x00007f1d02a61000)
+	libiomp5.so => /global/software/imkl/11.3.0.109-iimpi-2016.0.109/lib/intel64/libiomp5.so (0x00007f1d02720000)
+	libintlc.so.5 => /global/software/imkl/11.3.0.109-iimpi-2016.0.109/lib/intel64/libintlc.so.5 (0x00007f1d024c1000)
+	librt.so.1 => /usr/lib64/librt.so.1 (0x00007f1d022b9000)
+	libirng.so => /global/software/imkl/11.3.0.109-iimpi-2016.0.109/lib/intel64/libirng.so (0x00007f1d020b1000)
+	libnvidia-fatbinaryloader.so.418.39 => /usr/lib64/libnvidia-fatbinaryloader.so.418.39 (0x00007f1d01e63000)
+	libkrb5support.so.0 => /usr/lib64/libkrb5support.so.0 (0x00007f1d01c55000)
+	libkeyutils.so.1 => /usr/lib64/libkeyutils.so.1 (0x00007f1d01a51000)
+	libresolv.so.2 => /usr/lib64/libresolv.so.2 (0x00007f1d01838000)
+	libsasl2.so.3 => /usr/lib64/libsasl2.so.3 (0x00007f1d0161b000)
+	libselinux.so.1 => /usr/lib64/libselinux.so.1 (0x00007f1d013f4000)
+	libcrypt.so.1 => /usr/lib64/libcrypt.so.1 (0x00007f1d011bd000)
+	libpcre.so.1 => /usr/lib64/libpcre.so.1 (0x00007f1d00f5b000)
+	libfreebl3.so => /usr/lib64/libfreebl3.so (0x00007f1d00d58000)
+#################################################################################################
+
+Cannot find license.dat file in the TeraChem installation directory /global/software/TeraChem/2019.11-intel-2017.0.098-MPICH2-1.4.1p1
+
+
+TRYING THE NETWORK LICENSE...
+Connecting to license server '54.208.252.40' port '8877'...
+Connected!
+Checking your license...
+
+**************************************************************
+  Greetings, Martinez Group! You have 1000 licenses in total
+  IN USE: 1
+  AVAILABLE: 999
+**************************************************************
+
+Jobname: opt
+Scratch directory: ./scr.opt
+Random number seed: 1934470162
+
+XYZ coordinates opt.pdb
+Molden File Output: ./scr.opt/opt.molden
+Using basis set: 6-31gs
+dmrgstart not found
+cibox_start not found
+Spin multiplicity: 1
+DIIS will use up to 10 vectors.
+Condition number limit for the DIIS overlap matrix is            0
+WF convergence threshold: 1.00e-06
+Using DIIS algorithm to converge WF
+Maximum number of SCF iterations: 100
+Incremental fock with rebuild every 8 iterations
+Will switch to conventional Fock if diffuse functions are detected
+X-matrix tolerance: 1.00e-04
+PRECISION: DOUBLE
+DFT Functional requested: hf
+Method: Hartree-Fock 
+Wavefunction: RESTRICTED
+Initial guess generated by maximum overlap
+
+********************************************
+***** SINGLE POINT ENERGY CALCULATIONS *****
+********************************************
+
+using 1 out of 1 CUDA devices
+   Device 0:      GeForce GTX 970,  4042MB, CC 5.2 -- CPU THREAD 0
+-------------------------------------------------------------------
+Compiled with MAGMA support.  MAGMA parameters:
+    Matrices larger than 5000 square will be treated with MAGMA
+       (Change by setting the MagmaMinN environment variable)
+    Magma will use 1 out of 1 GPUs
+       (Change by setting the MagmaNGPUs environment variable)
+-------------------------------------------------------------------
+ CPU Memory Available: 18111.25 MegaWords 
+ GPU Memory Available: 249.33 MegaWords 
+ Maximum recommended basis set size: 5100 basis functions
+ (limited by GPU memory)
+-------------------------------------------------------------------
+Using d-functions. Configuring GPUs accordingly.
+0: CUBLAS initialized, available GPU memory: 2068MB
+
+
+Basis set:       6-31gs
+Total atoms:     53
+Total charge:    0
+Total electrons: 198 (99-alpha, 99-beta)
+Number electrons modeled by ECPs: 0
+Total orbitals:  483
+Total AO shells: 222 (135 S-shells; 58 P-shells; 29 D-shells; 0 F-shells; 0 G-shells)
+Spin multiplicity: 1
+Nuclear repulsion energy (QM atoms): 2610.707714978174 a.u.
+
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+         >>> Purifying P... IDMP = 1.58e-14 <<<
+   1     0.2921650126   -1105.4782961682   -1105.4782961682    13.47  
+   2     0.1017226137      -5.9946511913   -1111.4729473595    13.92  
+   3     0.0173725324      -0.6353238376   -1112.1082711971    13.21  
+   4     0.0096530627      -0.0453975682   -1112.1536687653    12.41  
+   5     0.0040251711      -0.0067163510   -1112.1603851163    11.62  
+   6     0.0013216487      -0.0011770400   -1112.1615621563    11.04  
+   7     0.0004830866      -0.0001774689   -1112.1617396252    10.38  
+   8     0.0002977843      -0.0000330983   -1112.1617727235     9.79  
+   9     0.0000912226      -0.0000060286   -1112.1617787521    14.50  
+  10     0.0000804475      -0.0000014045   -1112.1617801566     8.75  
+  11     0.0000356577      -0.0000004179   -1112.1617805745     8.15  
+  12     0.0000186950      -0.0000001382   -1112.1617807127     7.93  
+  13     0.0000043498      -0.0000000408   -1112.1617807535     7.54  
+  14     0.0000031943      -0.0000000032   -1112.1617807567     6.58  
+  15     0.0000014342      -0.0000000007   -1112.1617807574     6.08  
+  16     0.0000006177      -0.0000000001   -1112.1617807575     5.55  
+------------------------------------------------------------------------
+FINAL ENERGY: -1112.1617807575 a.u.
+HOMO-LUMO GAP: 7.898 eV
+CENTER OF MASS: {0.945904, -1.920823, 0.245428} ANGS
+DIPOLE MOMENT: {1.230300, -1.388671, 0.019498} (|D| = 1.855377) DEBYE
+
+Running Resp charge analysis...
+Total number of ESP grid points from 4 layers: 1885
+Electron static potential written to file ./scr.opt/esp.xyz (unit: Ansgtrom)
+terachem[0xb96d06]
+terachem[0xb955bf]
+terachem[0x5a805d]
+terachem[0x5b6314]
+terachem[0x636663]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7fd939bad445]
+terachem[0x42ea29]
+ESP unrestraint charges:
+Atom          X          Y          Z     Charge   Exposure
+-----------------------------------------------------------
+   C  -3.401507  -0.759670  -0.047243   0.027196     0.0873
+   C  -2.564358  -3.308910  -0.039684   0.167707     0.0473
+   C   0.179524  -3.371271   0.523454  -0.398444     0.0109
+   C   0.895730  -0.697309   0.961871   0.283720     0.0145
+   C  -1.275565   0.850377   0.663294  -0.044872     0.0982
+   C  -5.875158  -0.136060  -0.702978  -0.187077     0.1564
+   C  -7.547566  -2.057912  -1.383279  -0.175831     0.1564
+   C  -6.731204  -4.571247  -1.438081  -0.134255     0.1709
+   C  -4.253773  -5.206195  -0.791795  -0.233535     0.0982
+   H  -6.491209   1.823586  -0.704868   0.154898     0.2802
+   H  -9.482645  -1.598708  -1.895395   0.147530     0.3681
+   H  -8.035115  -6.052792  -1.999330   0.138401     0.3626
+   H  -3.671738  -7.167731  -0.890061   0.142296     0.1374
+   C  -1.179189   3.439301   1.143284  -0.191114     0.1673
+   C   3.127497   0.387394   1.874608  -0.206770     0.0800
+   C   1.088482   4.506996   1.967205  -0.148638     0.1745
+   C   3.214424   2.981988   2.350819  -0.190013     0.1709
+   H   4.790455  -0.755890   2.220428   0.164808     0.1538
+   H   4.956751   3.819136   3.038679   0.150147     0.3681
+   H  -2.853486   4.607152   0.916517   0.152481     0.2637
+   H   1.192417   6.521444   2.347040   0.141213     0.3626
+   C   1.678077  -5.497213   0.718096   0.243078     0.0255
+   C   0.695419  -8.069130   1.685636   0.028760     0.0000
+   C   4.404951  -5.750436   0.277790  -0.392215     0.0400
+   C   3.121827  -9.639492   2.227987  -0.287839     0.0218
+   C   5.255328  -8.052122   1.252888   0.334556     0.0473
+   H   3.097261 -11.485755   1.288793   0.090119     0.2967
+   H   3.333477 -10.034445   4.251883   0.088318     0.1429
+   C   7.819686  -8.755101   1.196197  -0.361511     0.1236
+   C   9.546896  -7.182848   0.056692  -0.148012     0.1455
+   C   6.130271  -4.240545  -1.203755   0.263335     0.0255
+   C   8.749431  -4.956751  -1.220763   0.064553     0.0509
+   H   8.416840 -10.525774   2.050353   0.183273     0.3242
+   H  11.542446  -7.672288   0.024566   0.162681     0.3132
+   C  10.512546  -3.490324  -2.613491  -0.237715     0.1491
+   C   5.391388  -2.203421  -2.779787  -0.260487     0.0800
+   C   7.141275  -0.854156  -4.163066  -0.117258     0.1418
+   C   9.735868  -1.460758  -4.042124  -0.135217     0.1673
+   H   3.410955  -1.719651  -2.921516   0.172559     0.1374
+   H   6.510106   0.685971  -5.363042   0.139685     0.3681
+   H  12.492979  -4.034565  -2.564358   0.155003     0.3022
+   H  11.100250  -0.362827  -5.113599   0.141933     0.3681
+   H  -0.359048  -9.025331   0.175745   0.031860     0.1484
+   C  -1.080923  -7.895275   4.028896   0.461678     0.0000
+   C  -2.142949 -10.512546   4.699749  -0.468094     0.1164
+   H  -3.148283 -11.359143   3.097261   0.087222     0.2912
+   H  -3.473316 -10.378375   6.277670   0.107353     0.3187
+   H  -0.644397 -11.825905   5.264777   0.094937     0.2198
+   C   0.166296  -6.651835   6.340031  -0.353801     0.0945
+   H   1.727210  -7.785671   7.092142   0.076775     0.2308
+   H  -1.220763  -6.445855   7.859370   0.077565     0.3132
+   H   0.895730  -4.771558   5.892166   0.053836     0.1648
+   H  -2.679631  -6.700968   3.497883  -0.056778     0.0989
+-----------------------------------------------------------
+Quality of fit (RRMS): 0.159
+
+Solving Resp charge with restraints iteratively...
+Restraint parameters a:0.0005 , b:0.001 
+Resp restrained charges didn'tconverge within 100 iterationsDIE called at line number 304 in file terachem/esp.cpp
+
+ Job terminated: Mon Dec  9 13:20:57 2019
+

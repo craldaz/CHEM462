@@ -1,0 +1,5 @@
+source leaprc.gaff
+LIG = loadmol2 final.mol2
+loadamberparams final.frcmod
+saveAmberParm LIG motor.prmtop motor.inpcrd
+quit
